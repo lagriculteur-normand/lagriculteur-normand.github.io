@@ -375,7 +375,64 @@ nav {
 h1 {
     color: #fefefe;
     position: relative;
-    left: 25px;  
+    font-size: 30px;
+    left: 100px;
+}
+h2 {
+    color: #fefefe;
+    position: relative;
+    left: 60px;
+    text-decoration: underline;
+    font-size: 30px;
+}
+h2 a {
+    color: #fefefe;
+    position: relative;
+    text-decoration: underline;
+    font-size: 30px;
+    text-shadow:
+	#6fa700 2px 2px,
+	#6fa700 -2px 2px,
+	#6fa700 -2px -2px,
+	#6fa700 2px -2px;
+}
+h2 a:hover {
+    color: #6fa700;
+    position: relative;
+    text-decoration: underline;
+    font-size: 35px;
+    text-shadow:
+	#fefefe 2px 2px,
+	#fefefe -2px 2px,
+	#fefefe -2px -2px,
+	#fefefe 2px -2px;
+}
+h3 {
+    color: #fefefe;
+    position: relative;
+    text-decoration: underline;
+    text-shadow:
+	#6fa700 2px 2px,
+	#6fa700 -2px 2px,
+	#6fa700 -2px -2px,
+	#6fa700 2px -2px;
+    font-size: 35px;
+}
+h4 {
+    color: #fefefe;
+    position: relative;
+    left: 60px;
+	text-shadow:
+	#6fa700 1px 1px,
+	#6fa700 -1px 1px,
+	#6fa700 -1px -1px,
+	#6fa700 1px -1px;
+    font-size: 20px;
+}
+
+iframe {
+    position: relative;
+    left: 60px;
 }
 
 #footer {
