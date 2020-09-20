@@ -15,11 +15,10 @@
 body {
     color: #6fa700;
     background-color: #fefefe;
-    background-image: url(./file/img/image.png);
+    background-image: url(./file/img/mont-st-michel.jpg);
     background-repeat: no-repeat;
-    background-position: center;
-    background-position-y: 123px;
     background-size: cover;
+    background-attachment: fixed;
     overflow-x: hidden; 
     margin: 0;
 }
@@ -28,19 +27,18 @@ html {
 }
 
 #banner1 {
-    display: block;
-    background-color: #fefefe;
-    height: 51px;
+    background-color: rgba(250, 250, 250, 0.6);
+    height: calc(51px + 22px);
     width: 100%;
+    margin: 0px 0px -22px 0px;
 }
 #banner1 p {
     position: relative;
-    font-weight: bold;
-    font-size: 30px;
-    top: 10px;
-    margin: 0;
-    text-align: center;
+    top: -65px;
+    left: 80px;
+    font-size: 26px;
 }
+
 nav {
     min-width: 500px;
     width: 100%;
@@ -58,15 +56,9 @@ nav {
     height: 100%;
     line-height: 50px;
     font-size: 22px;
-    }
+}
 .liste-items:hover {
-    display: flex;
-    justify-content: center;
     color: #6fa700;
-    list-style-type: none;
-    height: 100%;
-    line-height: 50px;
-    font-size: 24px;
 }
 
 .liste-items a {
@@ -78,34 +70,28 @@ nav {
     height: 100%;
     line-height: 50px;
     font-size: 22px;
-    }
+}
 .liste-items a:hover {
-    display: flex;
-    justify-content: center;
     color: #6fa700;
-    list-style-type: none;
-    height: 100%;
-    line-height: 50px;
-    font-size: 24px;
 }
 
 .items {
     cursor: pointer;
     text-align: center;
-    margin: 0 20px;
+    margin: 0 0px;
     flex-shrink: 0;
     color: #fefefe;
     background: #6fa700; 
-    width: 150px;
+    width: 180px;
 }
 .items:hover {
     cursor: pointer;
     text-align: center;
-    margin: 0 20px;
+    margin: 0 0px;
     flex-shrink: 0;
     color: #6fa700;
     background: #fefefe;
-    width: 150px;
+    width: 180px;
 }
 .items a {
     color: #fefefe;
@@ -124,16 +110,9 @@ nav {
 
 /* Sous Liste /*/
 
-.sous-liste {
-    position: relative;
-    top: -4px;
-    display: none;
-}
-
 .items-sous-liste {
     list-style-type: none;
-    text-align: left;
-    padding: 0 5px;
+    text-align: center;
     color: #fefefe;
     background: #6fa700;
     width: 265px;
@@ -141,223 +120,48 @@ nav {
 
 .items-sous-liste:hover {
     list-style-type: none;
-    text-align: left;
-    padding: 0 10px;
+    text-align: center;
     background: #fefefe;
     color: #6fa700;
     width: 265px;
+    border-width: 3px;
+    border-style: outset;
+    border-color: #6fa700;
 }
 .items-sous-liste:nth-child(3) {
-    height: 50px;
+    height: 500px;
 }
 
 .items:hover > ul {
     display: block;
-}
-
-/* Sous liste 2 */
-
-.sous-liste2 {
-    list-style-type: none;
-    text-align: center;
-    padding: 0 10px;
-    background: #fefefe;
-    color: #6fa700;
-    display: none;
-}
-.sous-liste2:hover {
-    list-style-type: none;
-    text-align: center;
-    padding: 0 10px;
-    background: #6fa700;
-    color: #fefefe;
-    display: none;
-}
-.items-sous-liste2 {
-    background: #6fa700;
-    color: #fefefe;
-}
-.items-sous-liste2:hover {
-    background: #fefefe;
-    color: #6fa700;
-}
-
-.items > ul > .items-sous-liste:hover > ul {
-    display: block;
-}
-
-/*liste item 2*/
-
-.liste-items-2 {
-    display: flex;
-    justify-content: center;
-    color: #fefefe;
-    list-style-type: none; 
-    height: 100%;
-    line-height: 50px;
-    font-size: 22px;
-    }
-.liste-items-2:hover {
-    display: flex;
-    justify-content: center;
-    color: #6fa700;
-    list-style-type: none;
-    height: 100%;
-    line-height: 50px;
-    font-size: 24px;
-}
-
-.liste-items-2 a {
-    display: flex;
-    justify-content: center;
-    color: #fefefe;
-    list-style-type: none;
-    text-decoration: none;
-    height: 100%;
-    line-height: 50px;
-    font-size: 22px;
-    }
-.liste-items-2 a:hover {
-    display: flex;
-    justify-content: center;
-    color: #6fa700;
-    list-style-type: none;
-    height: 100%;
-    line-height: 50px;
-    font-size: 24px;
-}
-
-.items-2 {
-    cursor: pointer;
-    text-align: center;
-    margin: 0 0px;
-    flex-shrink: 0;
-    color: #fefefe;
-    background: #6fa700; 
-    width: 280px;
-}
-.items-2:hover {
-    cursor: pointer;
-    text-align: center;
-    margin: 0 0px;
-    flex-shrink: 0;
-    color: #6fa700;
-    background: #fefefe;
-    width: 290px;
-}
-.items-2 a {
-    color: #fefefe;
-    background: #6fa700; 
-}
-.items-2 a:hover {
-    color: #6fa700;
-    background: #fefefe;
-}
-.items-2 span {
-    font-size: 17px;
-}
-.items-2:nth-child(3) {
-    margin-left: 0;
-}
-
-/*liste item 3*/
-
-.liste-items-3 {
-    display: flex;
-    justify-content: center;
-    color: #fefefe;
-    list-style-type: none; 
-    height: 100%;
-    line-height: 50px;
-    font-size: 22px;
-    }
-.liste-items-3:hover {
-    display: flex;
-    justify-content: center;
-    color: #6fa700;
-    list-style-type: none;
-    height: 100%;
-    line-height: 50px;
-    font-size: 24px;
-}
-
-.liste-items-3 a {
-    display: flex;
-    justify-content: center;
-    color: #fefefe;
-    list-style-type: none;
-    text-decoration: none;
-    height: 100%;
-    line-height: 50px;
-    font-size: 22px;
-    }
-.liste-items-3 a:hover {
-    display: flex;
-    justify-content: center;
-    color: #6fa700;
-    list-style-type: none;
-    height: 100%;
-    line-height: 50px;
-    font-size: 24px;
-}
-
-.items-3 {
-    cursor: pointer;
-    text-align: center;
-    margin: 0 0px;
-    flex-shrink: 0;
-    color: #fefefe;
-    background: #6fa700; 
-    width: 280px;
-}
-.items-3:hover {
-    cursor: pointer;
-    text-align: center;
-    margin: 0 0px;
-    flex-shrink: 0;
-    color: #6fa700;
-    background: #fefefe;
-    width: 290px;
-}
-.items-3 a {
-    color: #fefefe;
-    background: #6fa700; 
-}
-.items-3 a:hover {
-    color: #6fa700;
-    background: #fefefe;
-}
-.items-3 span {
-    font-size: 17px;
-}
-.items-3:nth-child(3) {
-    margin-left: 0;
+    left: 115px;
+    top: -105px;
 }
 
 /* Sous Liste /*/
 
 .sous-liste {
+    z-index: 1000;
     position: relative;
-    top: -4px;
+    top: 0px;
     display: none;
 }
 
 .items-sous-liste {
+    position: relative;
+    top: 105px;
+    left: -160px;
     list-style-type: none;
-    text-align: left;
-    padding: 0 5px;
+    text-align: center;
+    padding: 0 0px;
     color: #fefefe;
     background: #6fa700;
     width: 265px;
 }
 
 .items-sous-liste:hover {
-    list-style-type: none;
-    text-align: left;
-    padding: 0 10px;
     background: #fefefe;
     color: #6fa700;
-    width: 265px;
 }
 .items-sous-liste:nth-child(3) {
     height: 50px;
@@ -365,11 +169,8 @@ nav {
 
 .items:hover > ul {
     display: block;
-}
-
-
-#contenuprincipal {
-    color: #fefefe;
+    left: 115px;
+    top: -105px;
 }
 
 h1 {
@@ -409,7 +210,6 @@ h2 a:hover {
 }
 h3 {
     color: #fefefe;
-    position: relative;
     text-decoration: underline;
     text-shadow:
 	#6fa700 2px 2px,
@@ -430,21 +230,58 @@ h4 {
     font-size: 20px;
 }
 
-iframe {
+h5 {
+    color: #fefefe;
+    font-size: 30px;
+}
+
+#Twitch {
     position: relative;
     left: 60px;
+}
+
+#YouTube {
+    position: relative;
+    left: 20px;
 }
 
 #footer {
     text-align: center;
     display: block;
     background-color: #6fa700;
-    height: 100px;
+    height: auto;
+    padding: 1px 0;
 }
 
 #footer p {
     color: #fefefe;
     font-weight: bold;
+}
+
+.dl_fichier {
+    display: flex;
+    margin: 20px;
+    padding: 10px;
+    justify-content: center;
+    text-decoration: none;
+    color: #fefefe;
+    background-color: #6fa700;
     position: relative;
-    top: 23px;
+    left: calc(50% - 200px);
+    width: 300px;
+    font-size: 22px;
+    transition: 1s;
+}
+.dl_fichier i {
+    color: #fefefe;
+    padding: 0 10px 0 0;
+    transition: 0.5s;
+}
+.dl_fichier:hover {
+    color: #6fa700;
+    background-color: #333;
+}
+.dl_fichier:hover i {
+    color: #6fa700;
+    padding: 0 20px 0 0;
 }
